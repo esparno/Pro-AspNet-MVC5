@@ -22,3 +22,6 @@ C:\git\Pro-AspNet-MVC5\EssentialTools\EssentialTools.Tests\bin\Debug\System.Web.
 C:\git\Pro-AspNet-MVC5\EssentialTools\EssentialTools.Tests\obj\Debug\EssentialTools.Tests.csprojResolveAssemblyReference.cache
 C:\git\Pro-AspNet-MVC5\EssentialTools\EssentialTools.Tests\obj\Debug\EssentialTools.Tests.dll
 C:\git\Pro-AspNet-MVC5\EssentialTools\EssentialTools.Tests\obj\Debug\EssentialTools.Tests.pdb
+C:\git\Pro-AspNet-MVC5\EssentialTools\EssentialTools.Tests\bin\Debug\EssentialTools.Tests.dll.config
+C:\git\Pro-AspNet-MVC5\EssentialTools\EssentialTools.Tests\bin\Debug\Moq.dll
+C:\git\Pro-AspNet-MVC5\EssentialTools\EssentialTools.Tests\bin\Debug\Moq.xml

@@ -25,9 +25,9 @@ namespace EssentialTools.Infrastructure
         }
         private void AddBindings()
         {
-            kernel.Bind<IValueCalculator>().To<LinqValueCalculator>();
-            kernel.Bind<IDiscountHelper>().To<DefaultDiscountHelper>().WithPropertyValue("DiscountSize", 50m);
-            kernel.Bind<IDiscountHelper>().To<FlexibleDiscountHelper>().WhenInjectedInto<LinqValueCalculator>().InRequestScope();
+            kernel.Bind<IValueCalculator>().To<LinqValueCalculator>().InRequestScope();
+            kernel.Bind<IDiscountHelper>().To<DefaultDiscountHelper>().WithConstructorArgument("discountParam", 50M);
+            kernel.Bind<IDiscountHelper>().To<FlexibleDiscountHelper>().WhenInjectedInto<LinqValueCalculator>();
         }
     }
 }
