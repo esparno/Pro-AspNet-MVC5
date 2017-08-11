@@ -19,7 +19,7 @@ namespace SportsStore.WebUI.Controllers
             this.repository = productRepository;
         }
 
-        public ViewResult List(int page =1)
+        public ViewResult List(int page = 1)
         {
             var products = repository.Products
                 .OrderBy(p => p.ProductID)
@@ -30,7 +30,7 @@ namespace SportsStore.WebUI.Controllers
                 Products = products,
                 PagingInfo = new PagingInfo()
                 {
-                    TotalItems = products.Count(),
+                    TotalItems = repository.Products.Count(),
                     CurrentPage = page,
                     ItemsPerPage = PageSize
                 }
