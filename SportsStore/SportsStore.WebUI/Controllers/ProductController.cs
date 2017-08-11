@@ -34,7 +34,7 @@ namespace SportsStore.WebUI.Controllers
                     CurrentPage = page,
                     ItemsPerPage = PageSize
                 },
-                Category = category
+                CurrentCategory = category
             };
             return View(model);
             
