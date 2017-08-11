@@ -19,21 +19,22 @@ namespace SportsStore.WebUI.Controllers
             this.repository = productRepository;
         }
 
-        public ViewResult List(int page = 1)
+        public ViewResult List(string category, int page = 1)
         {
-            var products = repository.Products
-                .OrderBy(p => p.ProductID)
-                .Skip((page - 1) * PageSize)
-                .Take(PageSize);
             var model = new ProductsListViewModel()
             {
-                Products = products,
+                Products = repository.Products
+                            .Where(p => category == null || p.Category == category )
+                            .OrderBy(p => p.ProductID)
+                            .Skip((page - 1) * PageSize)
+                            .Take(PageSize),
                 PagingInfo = new PagingInfo()
                 {
                     TotalItems = repository.Products.Count(),
                     CurrentPage = page,
                     ItemsPerPage = PageSize
-                }
+                },
+                Category = category
             };
             return View(model);
             
