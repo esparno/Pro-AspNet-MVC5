@@ -22,7 +22,7 @@ namespace SportsStore.WebUI.Controllers
         {
             return View(repository.Products
                 .OrderBy(p => p.ProductID)
-                .Skip((page -1) * PageSize)
+                .Skip((page - 1) * PageSize)
                 .Take(PageSize));
         }
 

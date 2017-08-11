@@ -30,3 +30,7 @@ C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.WebUI\bin\SportsStore.Domain.dll
 C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.WebUI\bin\SportsStore.Domain.pdb
 C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.WebUI\bin\Moq.xml
 C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.csprojResolveAssemblyReference.cache
+C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.WebUI\bin\EntityFramework.dll
+C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.WebUI\bin\EntityFramework.SqlServer.dll
+C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.WebUI\bin\EntityFramework.xml
+C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.WebUI\bin\EntityFramework.SqlServer.xml

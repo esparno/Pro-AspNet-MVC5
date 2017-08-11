@@ -16,3 +16,8 @@ C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.Domain\bin\Debug\System.Web.WebPa
 C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
 C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
 C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
+C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll.config
+C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.dll
+C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.xml
+C:\git\Pro-AspNet-MVC5\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
