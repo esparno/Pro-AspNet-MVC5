@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using SportsStore.Domain.Abstract;
+
+namespace SportsStore.WebUI.Controllers
+{
+    public class NavController : Controller
+    {
+        private IProductRepository respository;
+        public NavController(IProductRepository repository)
+        {
+            this.respository = repository;
+        }
+        public PartialViewResult Menu()
+        {
+            IEnumerable<string> categories = respository.Products
+                                .Select(x => x.Category)
+                                .Distinct()
+                                .OrderBy(x => x);
+            return PartialView(categories);
+        }
+
+    }
+}
