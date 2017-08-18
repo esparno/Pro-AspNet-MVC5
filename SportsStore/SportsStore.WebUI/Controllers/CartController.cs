@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Entities;
+using SportsStore.WebUI.Models;
 
 namespace SportsStore.WebUI.Controllers
 {
@@ -34,6 +35,15 @@ namespace SportsStore.WebUI.Controllers
                 GetCart().RemoveItem(product);
             }
             return RedirectToAction("Index", new { returnUrl });
+        }
+
+        public ViewResult Index (string returnUrl)
+        {
+            return View(new CartIndexViewModel()
+                {
+                    Cart = GetCart(),
+                    ReturnUrl = returnUrl
+                });
         }
 
         private Cart GetCart()
