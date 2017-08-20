@@ -18,11 +18,16 @@ namespace SportsStore.WebUI.Controllers
             return View(repository.Products);
         }
 
-        [HttpPost]
-        public ActionResult Edit(int productId)
+        public ViewResult Edit(int productId)
         {
-            Product product = repository.Products.FirstOrDefault(p => p.ProductID == productId);
+            Product product = repository.Products
+                .FirstOrDefault(p => p.ProductID == productId);
+            return View(product);
+        }
 
+        [HttpPost]
+        public ActionResult Edit(Product product)
+        {
             if(ModelState.IsValid)
             {
                 repository.SaveProduct(product);
