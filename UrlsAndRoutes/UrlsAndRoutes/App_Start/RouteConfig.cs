@@ -13,19 +13,27 @@ namespace UrlsAndRoutes
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute("ShopSchema2", "Shop/OldAction",
-                new { controller = "Home", action = "Index" });
+            routes.MapRoute("MyRoute", "{controller}/{action}/{id}",
+                new
+                {
+                    controller = "Home",
+                    action = "Index",
+                    id = "DefaultId"
+                });
 
-            routes.MapRoute("ShopSchema", "Shop/{action}",
-                new { controller = "Home" });
+            //routes.MapRoute("ShopSchema2", "Shop/OldAction",
+            //    new { controller = "Home", action = "Index" });
 
-            routes.MapRoute("", "X{controller}/{action}");
+            //routes.MapRoute("ShopSchema", "Shop/{action}",
+            //    new { controller = "Home" });
 
-            routes.MapRoute("MyRoute", "{controller}/{action}", 
-                new { controller = "Home", action = "Index" });
+            //routes.MapRoute("", "X{controller}/{action}");
 
-            routes.MapRoute("", "Public/{controller}/{action}",
-                new { controller = "Home", action = "Index" });
+            //routes.MapRoute("MyRoute", "{controller}/{action}", 
+            //    new { controller = "Home", action = "Index" });
+
+            //routes.MapRoute("", "Public/{controller}/{action}",
+            //    new { controller = "Home", action = "Index" });
         }
     }
 }
