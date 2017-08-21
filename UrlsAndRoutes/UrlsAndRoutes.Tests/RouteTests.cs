@@ -77,16 +77,10 @@ namespace UrlsAndRoutes.Tests
         [TestMethod]
         public void TestIncomingRoutes()
         {
-
-            // check for the URL that is hoped for
-            TestRouteMatch("~/Admin/Index", "Admin", "Index");
-
-            // check that the values are being obtained from the segments
-            TestRouteMatch("~/One/Two", "One", "Two");
-
-            // ensure that too many or too few segments fails to match
-            TestRouteFail("~/Admin/Index/Segment");
-            TestRouteFail("~/Admin");
+            TestRouteMatch("~/", "Home", "Index");
+            TestRouteMatch("~/Customer", "Customer", "Index");
+            TestRouteMatch("~/Customer/List", "Customer", "List");
+            TestRouteFail("~s/Customer/List/All"); ;
         }
     }
 }
