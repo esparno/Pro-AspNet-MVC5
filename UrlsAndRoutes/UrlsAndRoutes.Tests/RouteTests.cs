@@ -80,7 +80,8 @@ namespace UrlsAndRoutes.Tests
             TestRouteMatch("~/", "Home", "Index");
             TestRouteMatch("~/Customer", "Customer", "Index");
             TestRouteMatch("~/Customer/List", "Customer", "List");
-            TestRouteFail("~s/Customer/List/All"); ;
+            TestRouteFail("~/Customer/List/All");
+            TestRouteMatch("~/Shop/Index", "Home", "Index");
         }
     }
 }
