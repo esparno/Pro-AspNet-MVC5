@@ -18,7 +18,7 @@ namespace UrlsAndRoutes
                 {
                     controller = "Home",
                     action = "Index",
-                    id = "DefaultId"
+                    id = UrlParameter.Optional
                 });
 
             //routes.MapRoute("ShopSchema2", "Shop/OldAction",
