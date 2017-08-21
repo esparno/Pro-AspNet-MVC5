@@ -15,6 +15,8 @@ namespace UrlsAndRoutes
 
             routes.MapRoute("MyRoute", "{controller}/{action}", 
                 new { controller = "Home", action = "Index" });
+            routes.MapRoute("", "Public/{controller}/{action}",
+                new { controller = "Home", action = "Index" });
         }
     }
 }
