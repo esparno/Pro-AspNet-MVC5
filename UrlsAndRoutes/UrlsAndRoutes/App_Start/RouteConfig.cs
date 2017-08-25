@@ -13,6 +13,9 @@ namespace UrlsAndRoutes
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("NewRoute", "App/Do{action}",
+                new { controller = "Home" });
+
             routes.MapRoute("MyRoute", "{controller}/{action}/{id}",
                 new
                 {

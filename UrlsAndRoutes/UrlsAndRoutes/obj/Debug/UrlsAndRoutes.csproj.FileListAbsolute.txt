@@ -16,3 +16,6 @@ C:\git\Pro-AspNet-MVC5\UrlsAndRoutes\UrlsAndRoutes\bin\System.Web.Mvc.xml
 C:\git\Pro-AspNet-MVC5\UrlsAndRoutes\UrlsAndRoutes\obj\Debug\UrlsAndRoutes.csprojResolveAssemblyReference.cache
 C:\git\Pro-AspNet-MVC5\UrlsAndRoutes\UrlsAndRoutes\obj\Debug\UrlsAndRoutes.dll
 C:\git\Pro-AspNet-MVC5\UrlsAndRoutes\UrlsAndRoutes\obj\Debug\UrlsAndRoutes.pdb
+C:\git\Pro-AspNet-MVC5\UrlsAndRoutes\UrlsAndRoutes\bin\Antlr3.Runtime.dll
+C:\git\Pro-AspNet-MVC5\UrlsAndRoutes\UrlsAndRoutes\bin\System.Web.Optimization.dll
+C:\git\Pro-AspNet-MVC5\UrlsAndRoutes\UrlsAndRoutes\bin\WebGrease.dll
